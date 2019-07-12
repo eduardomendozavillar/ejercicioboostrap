@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Formulario">
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formulario</h1>
+            <form>
+                <div class="parrafo form-group">
+                    <label>Nombres: </label> 
+                    <input   class="form-control" type="text" id="nombre"  placeholder="Ingrese nombre">
+                </div>
+                <div class="parrafo form-group">
+                    <label>Apellidos: </label> 
+                    <input class="form-control" type="text" id="apellidos" placeholder="Ingrese apellidos">
+                </div>
+                <div class="parrafo form-group">
+                    <label>Género: </label> 
+                    <select class="custom-select" id="generos">
+                        <option value="" disable selected>--Selecciona--</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </div>
+                <div class="parrafo form-check">
+                    <label>Estado civil:</label> 
+                    <div class="parrafo form-check">
+                        <input type="radio" id="casado"     name="casado">
+                        <label for="casado" id="casado">Casado</label> 
+                    </div>
+                    <div class="parrafo form-check">
+                        <input type="radio" id="soltero"    name="soltero">
+                        <label for="soltero" id="soltero">Soltero</label>
+                    </div>
+                </div>
+            
+            </form>
+            <div class="botoncito">
+                <button id="boton" class="btn btn-secondary">Agregar</button>
+            </div>
+        </div>
+    </div>
+    <table class="table" id="tabla">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Género</th>
+                    <th scope="col">Estado Civil</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 
+
